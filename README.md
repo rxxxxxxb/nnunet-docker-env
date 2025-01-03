@@ -34,7 +34,7 @@ Build the Docker container:
 
 **Step 2: Run the Docker Container**
 
-`docker-compose up -d`
+`docker compose up -d`
 
 **Step 3: Access the Docker Container**
 
