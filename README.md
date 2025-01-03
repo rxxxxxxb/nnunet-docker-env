@@ -25,6 +25,21 @@ This repository contains a Dockerized setup for training and inference with NNUN
      ```
 
 
+## **Docker Setup Instructions :**
+
+**Step 1: Build the Docker Image**
+Build the Docker container:
+
+`docker build -t nnunet:latest .`
+
+**Step 2: Run the Docker Container**
+
+`docker-compose up -d`
+
+**Step 3: Access the Docker Container**
+
+`docker exec -it nnunet-container bash`
+
 ## **Usage :**
 
 
