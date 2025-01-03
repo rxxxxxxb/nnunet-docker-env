@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+env/
+venv/
+
+# Ignore nnUNet data
+nnunet/nnUNet_preprocessed/*
+nnunet/nnUNet_raw/*
+nnunet/nnUNet_results/*
+
+# Allow folders
+!nnunet/nnUNet_preprocessed/.gitkeep
+!nnunet/nnUNet_raw/.gitkeep
+!nnunet/nnUNet_results/.gitkeep

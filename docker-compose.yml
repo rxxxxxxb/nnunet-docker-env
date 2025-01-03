@@ -1,0 +1,19 @@
+services:
+  nnunet:
+    image: nnunet_gpu:latest
+    container_name: nnunet
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    volumes:
+      - ${NNUNET_RAW_VOLUME}:/workspace/nnUNet/nnUNet_raw
+      - ${NNUNET_PREPROCESSED_VOLUME}:/workspace/nnUNet/nnUNet_preprocessed
+      - ${NNUNET_RESULTS_VOLUME}:/workspace/nnUNet/nnUNet_results
+    ipc: host  # Use the host's shared memory
+    tty: true
+    stdin_open: true
+    restart: "no"
+    command: /bin/bash
