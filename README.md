@@ -1,6 +1,6 @@
 # **NNUNet Docker Training Environment**
 
-This repository contains a Dockerized setup for training and inference with NNUNet. 
+This repository contains a Dockerized setup for training and inference with [NNUNet](https://github.com/MIC-DKFZ/nnUNet). 
 
 ---
 
