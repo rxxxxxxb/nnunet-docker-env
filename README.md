@@ -42,6 +42,7 @@ Build the Docker container:
 
 ## **Usage :**
 
+To understand how to prepare dataset for training nnUNet, please check [nnU-Net dataset format](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/dataset_format.md) 
 
 1. **Preprocessing :** 
 Run the preprocessing command: 
