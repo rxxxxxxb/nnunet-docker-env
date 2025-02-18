@@ -26,17 +26,19 @@ This repository contains a Dockerized setup for training and inference with [NNU
 
 
 ## **Docker Setup Instructions :**
+**Step 1: Make sure your Docker Image has the proper CUDA version installed.** \
+Your container should match the host's Nvidia driver and CUDA  version. 
 
-**Step 1: Build the Docker Image**
+**Step 2: Build the Docker Image**
 Build the Docker container:
 
 `docker build -t nnunet:latest .`
 
-**Step 2: Run the Docker Container**
+**Step 3: Run the Docker Container**
 
 `docker compose up -d`
 
-**Step 3: Access the Docker Container**
+**Step 4: Access the Docker Container**
 
 `docker exec -it nnunet-container bash`
 
